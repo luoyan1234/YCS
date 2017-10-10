@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FA5C069-E869-4A2B-84B6-28775311A1C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YCS.Common</RootNamespace>
+    <AssemblyName>YCS.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aliyun-net-sdk-core">
+      <HintPath>..\packages\aliyun-net-sdk-core.bkm.2.0.0\lib\net452\aliyun-net-sdk-core.dll</HintPath>
+    </Reference>
+    <Reference Include="aliyun-net-sdk-sms">
+      <HintPath>..\packages\aliyun-net-sdk-sms.bkm.1.0.0\lib\net452\aliyun-net-sdk-sms.dll</HintPath>
+    </Reference>
+    <Reference Include="Aliyun.OSS, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0ad4175f0dac0b9b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aliyun.OSS.SDK.2.4.0\lib\Aliyun.OSS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InsideSystem.Utility, Version=1.0.2057.32840, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\InsideSystem.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LitJson.0.7.0\lib\LitJson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Common.3.9.11\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Interfaces.3.9.9.0\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Redis.3.9.11\lib\net35\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Text.3.9.11\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.2774.19990, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AliPay\AlipayConfig.cs" />
+    <Compile Include="AliPay\AlipayCore.cs" />
+    <Compile Include="AliPay\AlipayNotify.cs" />
+    <Compile Include="AliPay\AlipaySubmit.cs" />
+    <Compile Include="AliPay\MD5.cs" />
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="ControllerHelper.cs" />
+    <Compile Include="ConvertObjectData.cs" />
+    <Compile Include="DeleHelpler.cs" />
+    <Compile Include="EvalHelper.cs" />
+    <Compile Include="FtpHelper.cs" />
+    <Compile Include="HtmlExtHelper.cs" />
+    <Compile Include="HttpHelper.cs" />
+    <Content Include="lib\ThoughtWorks.QRCode.dll" />
+    <Content Include="SMS\sms.txt" />
+    <Compile Include="IPHelper.cs" />
+    <Compile Include="JSendHelper.cs" />
+    <Compile Include="Login\QQHelper.cs" />
+    <Compile Include="Login\WxHelper.cs" />
+    <Compile Include="OSS\OSSConfig.cs" />
+    <Compile Include="OSS\OSSUploadHelper.cs" />
+    <Compile Include="RedisHelper.cs" />
+    <Compile Include="SMS\AliYunHelper.cs" />
+    <Compile Include="SMS\eMayHelper.cs" />
+    <Compile Include="SMS\CLHelper.cs" />
+    <Compile Include="SMS\RLHelper.cs" />
+    <Compile Include="SMS\HTWSHelper.cs" />
+    <Compile Include="IOHelper.cs" />
+    <Compile Include="MailHelper.cs" />
+    <Compile Include="OleDbHelper.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="EnumListHelper.cs" />
+    <Compile Include="ExtHelper.cs" />
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="PageHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticPageHelper.cs" />
+    <Compile Include="TenPay\ClientResponseHandler.cs" />
+    <Compile Include="TenPay\MD5Util.cs" />
+    <Compile Include="TenPay\RequestHandler.cs" />
+    <Compile Include="TenPay\ResponseHandler.cs" />
+    <Compile Include="TenPay\TenpayHttpClient.cs" />
+    <Compile Include="TenPay\TenpayUtil.cs" />
+    <Compile Include="UploadHelper.cs" />
+    <Compile Include="VryImgGen.cs" />
+    <Compile Include="WeiXin\JsApi\HttpService.cs" />
+    <Compile Include="WeiXin\JsApi\JsApiPay.cs" />
+    <Compile Include="WeiXin\JsApi\Notify.cs" />
+    <Compile Include="WeiXin\JsApi\WxPayApi.cs" />
+    <Compile Include="WeiXin\JsApi\WxPayData.cs" />
+    <Compile Include="WeiXin\JsApi\WxPayException.cs" />
+    <Compile Include="WeiXin\WxApi.cs" />
+    <Compile Include="WeiXin\WxBase.cs" />
+    <Compile Include="WeiXin\WxModel.cs" />
+    <Compile Include="WeiXin\WxPay.cs" />
+    <Compile Include="WeiXin\WxUserAuth.cs" />
+    <Compile Include="XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\InsideSystem.Utility.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
